@@ -12,7 +12,7 @@ void imu_callback(const sensor_msgs::Imu& imu_msg){
 
 int main(int argc, char **argv)
 {
-	ros::init(argc, argv, "hard_imu_to_pose");
+	ros::init(argc, argv, "imu_to_pose");
 	ros::NodeHandle n;
 	//Publisher
 	posestamped_pub = n.advertise<geometry_msgs::PoseStamped >("imu_pose", 10);
